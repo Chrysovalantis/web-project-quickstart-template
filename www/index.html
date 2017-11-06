@@ -2,14 +2,211 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Template</title>
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InterQuestion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   </head>
   <body>
-    <div class="box">
-      <div class="center">
-        <p></p>
+    <section id="genHeader">
+      <div class="header">
+        <div class="container-fluid">
+          <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <span id="headName" class="navbar-brand">Quest<span id="ilet">I</span></span>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li id="homescreen" class="tablinks active"><a  href="#">Home</a></li>
+                  <li id="room" class="tablinks"><a  href="#">Room Management</a></li>
+                  <li id="account"class="tablinks"><a  href="#">Account</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right ">
+                  <li id="signUp" class="tablinks"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                  <li id="login" class="tablinks"><a  href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        </div>
       </div>
-    </div>
+
+
+    </section>
+    <section id="home" class="tabContent" >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="blackboard">
+              <h2 id="intLesson">Need Interactive <br>Lesson??</h2>
+              <ul>
+                <li>Create Room</li>
+                <li>Organize Lectures</li>
+                <li>Add Questions</li>
+                <li>View Statistics</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-12 center">
+            <img class="img-responsive center-block" src="imgMB.png" alt="Photo of a smartphone with our app and a browser window with it">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 center">
+            <button id="tryNow" type="button" name="button">Try it Now for Free</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="signIn" class="tabContent">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="login-page">
+              <div class="form">
+                <form class="register-form">
+                  <input type="text" placeholder="name"/>
+                  <input type="password" placeholder="password"/>
+                  <input type="text" placeholder="email address"/>
+                  <button>create</button>
+                  <p class="message">Already registered? <a href="#">Sign In</a></p>
+                </form>
+                <form class="login-form">
+                  <input type="text" placeholder="username"/>
+                  <input type="password" placeholder="password"/>
+                  <button>login</button>
+                  <p class="message">Not registered? <a id="createAcc"href="#">Create an account</a></p>
+                  <p class="message"><a id="forgotPass" href="#">Forgot your Password?</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="createAccount" class="tabContent formStyle" >
+      <div class="row">
+        <div class="col-md-12">
+          <form action="#" method="post">
+            <h2>Sign Up</h2>
+              <p>
+                <label for="username" class="floatLabel">Username</label>
+                <input id="username" name="Username" type="text">
+              </p>
+              <p>
+                <label for="Email" class="floatLabel">Email</label>
+                <input id="Email" name="Email" type="text">
+              </p>
+              <p>
+                <label for="password" class="floatLabel">Password</label>
+                <input id="password" name="password" type="password">
+                <span>Enter a password longer than 8 characters</span>
+              </p>
+              <p>
+                <label for="confirm_password" class="floatLabel">Confirm Password</label>
+                <input id="confirm_password" name="confirm_password" type="password">
+                <span>Your passwords do not match</span>
+              </p>
+              <p>
+                <input type="submit" value="Create My Account" id="submit">
+              </p>
+
+            </form>
+            <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="roomManagement" class="tabContent">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <h2>Lectures</h2>
+            <h4>Add Lecture</h4><span id="lecIcon"class="glyphicon glyphicon-plus-sign"></span>
+            <ul id="lectures">
+              <li class="listItem"> Lecture 1</li>
+              <li class="listItem"> Lecture 2</li>
+            </ul>
+          </div>
+          <div class="col-md-7">
+            <h2>Room Name</h2>
+          </div>
+          <div class="col-md-2 right">
+            <h2>Students</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="accountSettings" class="tabContent">
+
+    </section>
+
+    <section id= "forgotPassword" class="tabContent formStyle">
+      <div class="row">
+        <div class="col-md-12">
+          <form action="#" method="post">
+            <h2>Reset Pasword</h2>
+              <p>
+                <label for="confirmation" class="floatLabel">Please write the safety code that we sent to your email account</label>
+                <input id="confirmation" name="confirm_code" type="password">
+                <span>Your code do not match</span>
+              </p>
+              <p>
+                <input type="submit" value="Submit" id="submitCode">
+              </p>
+            </form>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="resetPassword" class="tabContent formStyle">
+      <div class="row">
+        <div class="col-md-12">
+           <form> <!--action="#" method="post"-->
+            <h2>Reset Pasword</h2>
+            <p>
+              <label for="password" class="floatLabel">New Password</label>
+              <input id="password" name="password" type="password">
+              <span>Enter a password longer than 8 characters</span>
+            </p>
+            <p>
+              <label for="confirm_password" class="floatLabel">Confirm Password</label>
+              <input id="confirm_password" name="confirm_password" type="password">
+              <span>Your passwords do not match</span>
+            </p>
+            <p>
+              <input type="submit" value="Reset Password" id="submitReset">
+            </p>
+          </form>
+        </div>
+      </div>
+
+    </section>
+
   </body>
+  <script  src="index.js"></script>
 </html>

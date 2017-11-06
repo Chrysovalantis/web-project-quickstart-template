@@ -1,0 +1,381 @@
+@import url (https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+/*header starts*/
+  @font-face {
+    font-family: blackBoard;
+    src: url(blackBoard.ttf);
+  }
+  .header h1{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: 80px 0px;
+
+  }
+  em {
+    font-family: 'EB Garamond', serif;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    font-style:normal;
+    padding-top: 0.1em;
+    text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  }
+  .header .container-fluid{
+    padding: 0px;
+    background-color: #B4E4F0;
+
+  }
+  .navbar-inverse .navbar-nav>li>a {
+    color: rgb(91, 140, 207);
+    font-size: 1.20em;
+    font-weight: bold;
+  }
+  .navbar-inverse .navbar-nav>li>a:hover{
+    color: rgb(13, 54, 115);
+  }
+  .navbar-inverse .navbar-nav>li>a:active{
+    color: rgb(13, 54, 115);
+  }
+  .navbar-inverse .navbar-nav>li>a:focus{
+    color: rgb(13, 54, 115);
+  }
+  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: #B4E4F0;
+    color: rgb(13, 54, 115);
+
+  }
+
+  .navbar-right{
+    margin-right: 20px;
+  }
+
+  #headName{
+    margin-left: 20px;
+    color: rgb(13, 54, 115);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: comic;
+  }
+
+  #ilet{
+    color: red;
+    font-size: 30px;
+  }
+
+  .blackboard{
+    margin-top: 100px;
+    font-size: 40px;
+    color: #E8E8E8;
+    font-family: "Walter Turncoat", cursive;
+    border: 5px solid rgb(223, 168, 3);
+    padding: 20px 50px;
+    background-image: url("chalkboard/black.jpg");
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .blackboard>ul{
+    float:right;
+    list-style-type: none;
+  }
+  .blackboard>h2{
+    font-family: blackboard;
+    letter-spacing: 1px;
+    font-size: 70px;
+
+  }
+
+  .blackboard li:before{
+    content: "✓";
+    margin-right: 10px;
+  }
+
+
+/*header ends*/
+
+/*home starts*/
+
+
+
+
+
+
+  #home .center{
+    margin-top: 100px;
+    text-align: center;
+  }
+
+
+  #tryNow{
+    background: #B4E4F0;
+    border-radius: 30px !important;
+    padding: 5px 20px;
+    border: 3px solid #ffffff;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:  40px;
+    font-size: 30px;
+    color: rgb(13, 54, 115);
+  }
+  #tryNow:hover{
+    font-size: 33px;
+  }
+
+/*home ends*/
+
+/*signIn  start*/
+
+  #signIn{
+    text-align: center;
+    vertical-align: middle;
+  }
+
+
+  #signIn .row{
+    margin-top: 100px;
+  }
+
+  #signIn .login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+  #signIn .form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  #signIn .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  #signIn .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #81cadb;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  #signIn .form button:hover,.form button:active,.form button:focus {
+    background: #5aadc1;
+  }
+  #signIn .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  #signIn .form .message a {
+    color: #81cadb;
+    text-decoration: none;
+  }
+  #signIn .form .register-form {
+    display: none;
+  }
+  #signIn .container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  #signIn .container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #signIn .container .info {
+    margin: 50px auto;
+    text-align: center;
+  }
+  #signIn .container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+  }
+  #signIn .container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+  }
+  #signIn .container .info span a {
+    color: #000000;
+    text-decoration: none;
+  }
+  #signIn .container .info span .fa {
+    color: #EF3B3A;
+  }
+
+
+/*signIn  end*/
+
+/*create account starts*/
+
+  .formStyle .row{
+    margin-top: 80px;
+  }
+
+  .formStyle form {
+    background: #fff;
+    padding: 4em 4em 2em;
+    max-width: 400px;
+    margin: 50px auto 0;
+    box-shadow: 0 0 1em #222;
+    border-radius: 2px;
+  }
+  .formStyle form h2 {
+    margin: 0 0 50px 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #666666;
+    border-bottom: solid 1px #e5e5e5;
+  }
+  .formStyle form p {
+    margin: 0 0 2em 0;
+    position: relative;
+  }
+  .formStyle form input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    margin: 0;
+  }
+  .formStyle form input[type="text"],
+  .formStyle form input[type="password"] {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    font-size: 1.6em;
+    padding: .8em .5em;
+    border-radius: 2px;
+  }
+  .formStyle form input[type="text"]:focus,
+  .formStyle form input[type="password"]:focus {
+    background: #fff;
+  }
+  .formStyle form span {
+    display: block;
+    background: #F9A5A5;
+    padding: 2px 5px;
+    color: #666;
+  }
+  .formStyle form input[type="submit"] {
+    background: #81cadb;
+
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 2em;
+    line-height: 1.6em;
+    margin: 2em 0 0;
+    outline: none;
+    padding: .4em 0;
+    text-shadow: 0 1px #68B25B;
+  }
+  .formStyle form input[type="submit"]:hover {
+    background:  #5aadc1;
+    text-shadow: 0 1px 3px rgba(70, 93, 41, 0.7);
+  }
+
+  .formStyle form label.floatLabel {
+    top: -11px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+  }
+
+/*create account ends*/
+
+/*Management starts*/
+
+  #roomManagement .row{
+    margin-top: 100px;
+  }
+
+  #roomManagement .col-md-7{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 1em #222;
+    border-radius: 2px;
+    height: 800px;
+    margin: 10px;
+
+  }
+  #roomManagement h2{
+    text-align: center;
+  }
+  #roomManagement ul{
+    border: 1px solid black;
+    margin: 5px;
+    height: 680px;
+    text-align: left;
+    padding: 10px;
+  }
+  #roomManagement li{
+    list-style: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  #roomManagement .rename{
+    border: white;
+    width: 130px;
+  }
+  #roomManagement .col-md-2{
+    background-color: white;
+    box-shadow: 0 0 1em #222;
+    border-radius: 2px;
+    height: 800px;
+    margin-top:10px;
+  }
+
+
+  #roomManagement h4{
+    display: inline;
+    padding: 5px;
+  }
+
+  #roomManagement #lecIcon{
+    cursor: pointer;
+  }
+
+/*Management ends*/
+
+
+/*body starts*/
+
+  body{
+    background-color: #e06666 !important;
+  }
+
+/*body ends*/
