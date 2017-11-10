@@ -70,25 +70,72 @@ document.getElementById('lecIcon').addEventListener('click',
   function(){
     var ul = document.getElementById("lectures");
     var li = document.createElement("li");
-    li.appendChild(document.createTextNode("Lecture"));
+    li.className+="listItem";
+    var a= document.createElement("a");
+    a.appendChild(document.createTextNode("Lecture"));
+    a.addEventListener('click',function(){
+      console.log("lalal");
+      document.getElementById('lecQuestions').style.display="block";
+      document.getElementById('createQuestion').style.display="none";
+    });
+    li.appendChild(a);
     ul.appendChild(li);
+    document.getElementById('guestMng').classList.add('active');
+    document.getElementById('statistics').classList.remove('active');
   }
 
-)
+);
 
+document.getElementById('guestMng').addEventListener('click',
+  function(){
+    document.getElementById('guestMng').classList.add('active');
+    document.getElementById('statistics').classList.remove('active');
+    if(document.getElementById ('lectureList').getElementsByTagName('li').length>0){
+      document.getElementById('lecQuestions').style.display="block";
+    }
 
+  }
+);
+
+document.getElementById('statistics').addEventListener('click',
+  function(){
+    document.getElementById('statistics').classList.add('active');
+    document.getElementById('guestMng').classList.remove('active');
+    document.getElementById('lecQuestions').style.display="none";
+  }
+
+);
+
+$('#createQuestion').hide();
+$('#lecQuestions').hide();
+
+$("#questIcon").on("click", function(){
+  $(" <li class='mylist'>Question Title</li>").appendTo("#questList").focus();
+  $('.mylist').on('click',function(){
+    $('#createQuestion').show();
+    $('#lecQuestions').hide();
+
+  });
+});
 
 
 var oriVal;
-$("#lectures").on('dblclick', 'li', function () {
+$("#lectures").on('dblclick', 'li > a', function () {
     oriVal = $(this).text();
     $(this).text("");
     $("<input type='text' class='rename'>").appendTo(this).focus();
 });
-$("#lectures").on('focusout', 'li > input', function () {
+$("#lectures").on('focusout', 'li > a > input', function () {
     var $this = $(this);
     $this.parent().text($this.val() || oriVal); // Use current or original val.
     $this.remove();                      // Don't just hide, remove the element.
+});
+
+$('#btnCanselQuest').on('click',function(){
+
+  $('#createQuestion').hide();
+  $('#lecQuestions').show();
+
 });
 
 

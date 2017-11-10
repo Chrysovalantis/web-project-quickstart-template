@@ -321,11 +321,12 @@
 
   #roomManagement .row{
     margin-top: 100px;
+
   }
 
   #roomManagement .col-md-7{
     text-align: center;
-    background-color: white;
+    background-color:rgb(240, 234, 234);
     box-shadow: 0 0 1em #222;
     border-radius: 2px;
     height: 800px;
@@ -334,40 +335,103 @@
   }
   #roomManagement h2{
     text-align: center;
+    padding-bottom: 5px;
+    border-bottom: solid 1px black;
+    margin-bottom: 30px;
   }
-  #roomManagement ul{
-    border: 1px solid black;
-    margin: 5px;
-    height: 680px;
-    text-align: left;
+
+  #roomManagement .listHeader > h4{
+    display: inline;
+    padding: 5px;
+    font-weight: bold;
+  }
+  #roomManagement .listHeader {
+    background-color: rgba(208, 179, 189, 1);
     padding: 10px;
   }
-  #roomManagement li{
-    list-style: none;
-    margin-top: 10px;
-    cursor: pointer;
+
+  #roomManagement ul{
+
+    width: auto;
+    text-align: left;
+    overflow-y: auto;
+    padding: 10px 0px;
+
+
   }
+  #roomManagement .listItem{
+    list-style: none;
+    cursor: pointer;
+    background-color: #B4E4F0;
+    padding: 3px;
+    font-weight: bold;
+
+  }
+
+  .navbar-nav{
+    padding: 0px !important;
+  }
+
   #roomManagement .rename{
     border: white;
     width: 130px;
   }
   #roomManagement .col-md-2{
-    background-color: white;
+
     box-shadow: 0 0 1em #222;
     border-radius: 2px;
     height: 800px;
     margin-top:10px;
+    background-color: rgb(240, 234, 234);
   }
 
-
-  #roomManagement h4{
-    display: inline;
-    padding: 5px;
-  }
 
   #roomManagement #lecIcon{
     cursor: pointer;
   }
+
+  #students {
+    margin-top: 21px !important;
+  }
+
+  #roomManagement .navbar-inverse{
+    background-color: #B4E4F0;
+  }
+
+  .mylist {
+    padding: 15px;
+    background-color:  #B4E4F0;
+    margin-top: 6px;
+    cursor: pointer;
+    color: rgb(13, 54, 115);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 99%;
+
+  }
+  #questIcon{
+    cursor: pointer;
+  }
+
+  .input-group-addon{
+    display: flex;
+  }
+
+  #createQuestion .form-horizontal{
+    background-color: white;
+    padding: 40px 25px 10px 10px;
+    margin-top: 20px;
+    border: 2px solid rgba(208, 179, 189, 1);
+    border-radius: 25px;
+  }
+  #lectures{
+    height: 650px;
+  }
+  #questList{
+    height: 550px;
+  }
+
+
+
 
 /*Management ends*/
 
